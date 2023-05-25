@@ -1,0 +1,85 @@
+// カラー
+//--------------------------
+$cr-m: #51a3f8;
+$cr-a: #51d4f1;
+$cr-light-blue: #c8d9e226;
+$cr-bg: #fff;
+$cr-txt: #212b39;
+$cr-black: #212b39;
+$cr-gray: #b5c1d1;
+$cr-light-gray: #f6f6f6;
+$cr-dark-gray: #5e5e5e;
+$cr-red: #ff0000;
+$cr-gra: linear-gradient(to right, #51a3f8, #51d4f1);
+$cr-gra-dark: linear-gradient(to right, #212b39, #003d4a);
+
+// マウスホバー
+//--------------------------
+$opacity: 0.7;
+
+// 陰
+//--------------------------
+$shadow: 0px 0px 10px #00000029;
+
+// フォント
+//--------------------------
+$ff-ja: "Noto Sans JP", sans-serif;
+$ff-en: "Poppins", sans-serif;
+$ff-code: monospace, sans-serif;
+$fz-base: 14px;
+$ff-base: $ff-ja;
+$fw-base: 500;
+$lh-base: 1.7;
+$ls-base: 0.08em;
+
+// レイアウトサイズ
+//--------------------------
+$layout-width-inner: 1000px;
+$layout-width-inner-wide: 1200px;
+$breakpoint-size: (
+	"md": 768,
+	"lg": 1000,
+	"xl": 1280,
+	"xxl": 1600,
+);
+
+// ブレークポイント (SP基準)
+$breakpoints: (
+	sp: "not (min-width: #{map-get($breakpoint-size,'md')}px)",
+	md: "(min-width: #{map-get($breakpoint-size,'md')}px)",
+	lg: "(min-width: #{map-get($breakpoint-size,'lg')}px)",
+	xl: "(min-width: #{map-get($breakpoint-size,'xl')}px)",
+	xxl: "(min-width: #{map-get($breakpoint-size,'xxl')}px)",
+	hover: "(hover: hover)",
+);
+
+// ヘッダー高さ
+//--------------------------
+$header-height-sp: 60px;
+$header-height-pc: 80px;
+
+// 重なり順
+//--------------------------
+$layer: (
+	//ローディング
+	loading: 300,
+	//モーダル
+	modal: 100,
+	//ドロワー
+	drawer: 50,
+	//フローディング
+	floating: 40,
+	//ヘッダー
+	header: 30,
+	//フッター
+	footer: 20,
+	//アニメーションオブジェクト
+	object: 10,
+	//基準
+	default: 1
+);
+
+// 余白
+//--------------------------
+$pd-pc: 24px; //PC
+$pd-sp: 16px; //SP

@@ -1,0 +1,40 @@
+@use "../global" as g;
+
+.l-inner {
+	height: inherit;
+	margin: 0 auto;
+	padding-left: g.$pd-sp;
+	padding-right: g.$pd-sp;
+	width: 100%;
+	max-width: 600px;
+
+	@include g.mq("md") {
+		padding-left: g.$pd-pc;
+		padding-right: g.$pd-pc;
+		max-width: g.$layout-width-inner + g.$pd-pc * 2;
+	}
+
+	@include g.mq("xxl") {
+		max-width: g.$layout-width-inner-wide + g.$pd-pc * 2;
+	}
+}
+
+.l-inner--narrow {
+	@include g.mq("md") {
+		max-width: 768px + g.$pd-pc * 2;
+	}
+
+	@include g.mq("xl") {
+		max-width: 900px + g.$pd-pc * 2;
+	}
+
+	@include g.mq("xxl") {
+		max-width: 900px + g.$pd-pc * 2;
+	}
+}
+
+.l-inner--wide {
+	@include g.mq("md") {
+		max-width: 1100px + g.$pd-pc * 2;
+	}
+}

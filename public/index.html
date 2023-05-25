@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+	<header class="l-header" id="js-header">
+		<div class="p-header">
+			<div class="p-header__logo">
+				<a class="c-logo-header" href="">ロゴ</a>
+			</div>
+			<nav class="p-header__nav">
+				<ul class="p-nav-header">
+					<li class="p-nav-header__item">
+						<a href="">メニュー</a>
+					</li>
+					<li class="p-nav-header__item">
+						<a href="">メニュー</a>
+					</li>
+					<li class="p-nav-header__item p-nav-header__item--hasMore">
+						<a href="">メニュー↓</a>
+						<ul class="p-nav-header__more">
+							<li class="p-nav-header__more-list">
+								<a href="">サブメニュー</a>
+							</li>
+							<li class="p-nav-header__more-list">
+								<a href="">サブメニュー</a>
+							</li>
+							<li class="p-nav-header__more-list">
+								<a href="">サブメニュー</a>
+							</li>
+						</ul>
+					</li>
+					<li class="p-nav-header__item"><a href="">メニュー</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="p-drawer">
+		<div class="p-drawer__hamburger">
+			<button class="c-btn-hamburger js-btn-hamburger" aria-controls="navigation" aria-expanded="false">
+				<div class="c-btn-hamburger__lines">
+					<span class="c-btn-hamburger__line c-btn-hamburger__line--top"></span>
+					<span class="c-btn-hamburger__line c-btn-hamburger__line--center"></span>
+					<span class="c-btn-hamburger__line c-btn-hamburger__line--bottom"></span>
+				</div>
+				<p class="c-btn-hamburger__menu js-btn-hamburger-text">メニュー</p>
+			</button>
+		</div>
+		<div class="p-drawer__contents js-drawerMenu" id="navigation">
+			<div class="p-drawer__logo">
+				<img src="../wp-daido/assets/img/common/logo-white.webp" alt="" />
+			</div>
+			<nav class="p-drawer__nav">
+				<ul class="p-nav-drawer">
+					<li class="p-nav-drawer__item">
+						<a href="" class="p-nav-drawer__link js-drawer-item">メニュー</a>
+					</li>
+					<li class="p-nav-drawer__item p-nav-drawer__item--accordion">
+						<a href="" class="p-nav-drawer__link js-drawer-item">メニュー</a>
+						<button class="p-nav-drawer__btnAccordion c-icon-accordion js-accordion" type="button" aria-controls="accordion2" aria-expanded="false">
+							<div class="c-icon-accordion__bar1"></div>
+							<div class="c-icon-accordion__bar2"></div>
+						</button>
+						<ul class="p-nav-drawer__subItems" id="accordion2">
+							<li class="p-nav-drawer__subItem js-drawer-item">
+								<a href="">サブメニュー</a>
+							</li>
+							<li class="p-nav-drawer__subItem js-drawer-item">
+								<a href="">サブメニュー</a>
+							</li>
+							<li class="p-nav-drawer__subItem js-drawer-item">
+								<a href="">サブメニュー</a>
+							</li>
+							<li class="p-nav-drawer__subItem js-drawer-item">
+								<a href="">サブメニュー</a>
+							</li>
+							<li class="p-nav-drawer__subItem js-drawer-item">
+								<a href="">サブメニュー</a>
+							</li>
+						</ul>
+					</li>
+					<li class="p-nav-drawer__item p-nav-drawer__item--accordion">
+						<a href="" class="p-nav-drawer__link js-drawer-item">メニュー</a>
+						<button class="p-nav-drawer__btnAccordion c-icon-accordion js-accordion" type="button" aria-controls="accordion1" aria-expanded="false">
+							<div class="c-icon-accordion__bar1"></div>
+							<div class="c-icon-accordion__bar2"></div>
+						</button>
+						<ul class="p-nav-drawer__subItems" id="accordion1">
+							<li class="p-nav-drawer__subItem js-drawer-item">
+								<a href="">サブメニュー</a>
+							</li>
+							<li class="p-nav-drawer__subItem js-drawer-item">
+								<a href="">サブメニュー</a>
+							</li>
+							<li class="p-nav-drawer__subItem js-drawer-item">
+								<a href="">サブメニュー</a>
+							</li>
+							<li class="p-nav-drawer__subItem js-drawer-item">
+								<a href="">サブメニュー</a>
+							</li>
+							<li class="p-nav-drawer__subItem js-drawer-item">
+								<a href="">サブメニュー</a>
+							</li>
+						</ul>
+					</li>
+					<li class="p-nav-drawer__item">
+						<a href="" class="p-nav-drawer__link js-drawer-item">メニュー</a>
+					</li>
+					<li class="p-nav-drawer__item">
+						<a href="" class="p-nav-drawer__link js-drawer-item">メニュー</a>
+					</li>
+					<li class="p-nav-drawer__item">
+						<a href="" class="p-nav-drawer__link js-drawer-item">メニュー</a>
+					</li>
+					<li class="p-nav-drawer__item">
+						<a href="" class="p-nav-drawer__link js-drawer-item">メニュー</a>
+					</li>
+				</ul>
+				<div class="js-focus-trap" tabindex="0"></div>
+			</nav>
+		</div>
+	</div>
+	<!-- p-drawer -->
+
+	<div class="main" style="background: #eee; height: 2000px;" >
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="./assets/js/common.js"></script>
+</body>
+
+</html>

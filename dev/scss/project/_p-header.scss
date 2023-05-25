@@ -1,0 +1,31 @@
+@use "../global" as g;
+
+.p-header {
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: g.$cr-black;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.p-header__logo {
+	margin-right: auto;
+}
+.p-header__nav {
+	display: none;
+	justify-content: center;
+	align-items: center;
+
+	@include g.mq("xl") {
+		display: flex;
+	}
+}
+.p-header__right {
+	margin-left: auto;
+	display: none;
+
+	@include g.mq("xl") {
+		display: block;
+	}
+}

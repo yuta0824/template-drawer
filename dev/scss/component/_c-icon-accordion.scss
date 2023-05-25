@@ -1,0 +1,41 @@
+@use "../global" as g;
+
+.c-icon-accordion {
+	cursor: pointer;
+	width: 44px;
+	height: 100%;
+	position: relative;
+	display: block;
+	border: none;
+	margin: 0 auto;
+	background: transparent;
+	@include g.hover;
+
+	&.is-open {
+		.c-icon-accordion__bar2 {
+			transform: rotate(90deg) translate(-50%, -50%);
+			opacity: 0;
+			transform-origin: top center;
+		}
+	}
+}
+
+.c-icon-accordion__bar1,
+.c-icon-accordion__bar2 {
+	background: #fff;
+	position: absolute;
+	transition: all 0.4s ease 0s;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.c-icon-accordion__bar1 {
+	width: 21px;
+	height: 2px;
+}
+
+.c-icon-accordion__bar2 {
+	width: 2px;
+	height: 21px;
+}

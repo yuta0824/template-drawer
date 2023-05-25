@@ -1,0 +1,84 @@
+@use "sass:math";
+@use "../global" as g;
+
+.c-btn-hamburger {
+	border: none;
+	height: 50px;
+	width: 50px;
+	padding: 10px 5px 5px;
+	background-color: #485464;
+	display: inline-block;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	cursor: pointer;
+	@include g.hover;
+
+	@include g.mq("md") {
+		width: g.$header-height-pc;
+		height: g.$header-height-pc;
+	}
+	}
+
+.c-btn-hamburger__lines {
+	width: g.$drawer-bar-width;
+	height: g.$drawer-menu-height;
+	margin: 0 auto;
+	position: relative;
+}
+
+.c-btn-hamburger__line {
+	background: g.$drawer-bar-cr;
+	display: block;
+	height: g.$drawer-bar-height;
+	position: absolute;
+	transition: transform 0.3s;
+	width: 100%;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.c-btn-hamburger__line--top {
+	top: 0;
+}
+
+.c-btn-hamburger__line--center {
+	top: g.$drawer-bar-space + g.$drawer-bar-height;
+}
+
+.c-btn-hamburger__line--bottom {
+	bottom: 0;
+}
+
+.is-open .c-btn-hamburger__line--top {
+	top: g.$drawer-bar-space + g.$drawer-bar-height;
+	transform: rotate(45deg);
+}
+
+.is-open .c-btn-hamburger__line--center {
+	transform: scaleX(0);
+}
+
+.is-open .c-btn-hamburger__line--bottom {
+	bottom: g.$drawer-bar-space + g.$drawer-bar-height;
+	transform: rotate(135deg);
+}
+
+.c-btn-hamburger__menu {
+	font-size: 10px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 1;
+	margin: auto;
+	padding-top: 7px;
+	display: block;
+	font-family: g.$ff-en;
+
+	@include g.mq("md") {
+		margin: 6px auto 0;
+		font-size: 14px;
+	}
+}

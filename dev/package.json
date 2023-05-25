@@ -1,0 +1,26 @@
+{
+	"name": "template-static",
+	"version": "1.0.0",
+	"main": "gulpfile.js",
+	"description": "静的サイト開発用テーマ",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^9.8.8",
+		"browser-sync": "^2.27.10",
+		"css-declaration-sorter": "^5.1.2",
+		"gulp": "^4.0.2",
+		"gulp-group-css-media-queries": "^1.2.2",
+		"gulp-notify": "^3.2.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^9.0.1",
+		"gulp-sass": "^5.1.0",
+		"gulp-sass-glob-use-forward": "^0.1.3",
+		"sass": "^1.62.0",
+		"gulp-changed": "^4.0.3",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-webp": "^4.0.1",
+		"imagemin-mozjpeg": "^9.0.0",
+		"imagemin-pngquant": "^9.0.2",
+		"del": "^6.1.1"
+	}
+}

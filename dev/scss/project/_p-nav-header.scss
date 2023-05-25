@@ -1,0 +1,39 @@
+@use "../global" as g;
+
+.p-nav-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.p-nav-header__item {
+	position: relative;
+	a {
+		padding: 1em;	
+	}
+}
+
+.p-nav-header__item--hasMore:hover .p-nav-header__more,
+.p-nav-header__item--hasMore:focus-within .p-nav-header__more {
+	display: block;
+}
+
+.p-nav-header__more {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding: 1em;
+	background: #fff;
+	box-shadow: g.$shadow;
+}
+
+.p-nav-header__more-list {
+	a {
+		display: block;
+		text-align: left;
+		padding: 1em;
+		white-space: nowrap;
+	}
+}

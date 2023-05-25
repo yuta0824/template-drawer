@@ -1,0 +1,8 @@
+// ドロワー定義
+//--------------------------
+$drawer-bar-cr: #fff; // ハンバーガーメニューの色
+$drawer-content-bg: #212b39; //ドロワー背景色
+$drawer-bar-width: 30px; //ドロワーバーの横幅
+$drawer-bar-height: 2px; //ドロワーバーの高さ
+$drawer-bar-space: 5px; // ドロワーバーの間の余白サイズ
+$drawer-menu-height: ($drawer-bar-height * 3) + ($drawer-bar-space * 2); //ドロワーメニューの高さ

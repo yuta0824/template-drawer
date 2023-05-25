@@ -1,0 +1,43 @@
+@use "../global" as g;
+
+// フォント
+//--------------------------
+.u-fontFamily-serif {
+  font-family: "Noto Serif JP";
+}
+
+// カラー
+//--------------------------
+.u-color-accent {
+  color: g.$cr-a;
+}
+
+// テキスト折り返さない
+//--------------------------
+.u-white-space {
+  white-space: nowrap;
+}
+
+// テキスト折り返さない
+//--------------------------
+.u-inline-block {
+  display: inline-block;
+}
+
+// リンクテキスト
+//--------------------------
+.u-text-link {
+	cursor: pointer;
+	text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: g.$cr-txt;
+  text-decoration-thickness: 1px;
+}
+
+.u-text-base {
+	font-size: g.$fz-base;
+	font-weight: g.$fw-base;
+	letter-spacing: g.$ls-base;;
+	color: g.$cr-txt;
+	line-height: g.$lh-base;
+}
